@@ -1,0 +1,68 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url(баращ.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(77, 44, 69);
+}
+header {
+    background-color: rgb(224, 189, 221);
+    padding: 15px;
+    text-align: center;
+}
+.content {
+    overflow: auto;
+    min-height: 100%;
+}
+.menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.menu a {
+    text-decoration: none;
+    background-color: rgb(224, 189, 221);
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: rgb(77, 44, 69);
+}
+.main {
+    flex: 1 0 auto;
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+}
+.right {
+    background-color: rgb(224, 189, 221);
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+}
+footer {
+    flex-shrink: 0;
+    background-color: rgb(224, 189, 221);
+    text-align: center;
+    padding: 10px;
+    margin-top: 7px;
+}
+@media only screen and 
+(max-wight:620px) {
+    .menu, .main, .right
+}
